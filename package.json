@@ -2,9 +2,12 @@
   "name": "my-package",
   "scripts": {
     "build": "babel src -d lib",
+    "build:v1": "yarn workspace docusaurus-1-website build",
+    "build:v2": "yarn workspace docusaurus-2-website build",
     "test": "jest"
   },
   "dependencies": {
+    "jest": "^25.1.0",
     "package": "^1.0.1"
   }
 }
