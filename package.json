@@ -1,10 +1,21 @@
 {
   "name": "my-package",
   "scripts": {
-    "build": "babel src -d lib",
+     "start": "yarn tsc && yarn start:v2",
+    "start:v1": "yarn workspace docusaurus-1-website start",
+    "start:v2": "yarn workspace docusaurus-2-website start",
+    "build": "yarn tsc && yarn build:v2",
     "build:v1": "yarn workspace docusaurus-1-website build",
     "build:v2": "yarn workspace docusaurus-2-website build",
-    "test": "jest"
+    "changelog": "lerna-changelog",
+    "postinstall": "yarn tsc",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,ts}\"",
+    "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,ts}\"",
+    "prettier-docs": "prettier --config .prettierrc --write \"**/*.md\"",
+    "lint": "eslint --cache \"**/*.js\"",
+    "lerna": "lerna",
+    "test": "jest",
+    "tsc": "lerna run tsc --no-private"
   },
   "dependencies": {
     "jest": "^25.1.0",
