@@ -1,11 +1,11 @@
-name: Docusaurus on Windows
+name: Docusaurus
 
 on:
   # Trigger the workflow on push or pull request,
   # but only for the master branch
   push:
     branches:
-      - gh-pages
+      - master
   pull_request:
     branches:
       - master
