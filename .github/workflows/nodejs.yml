@@ -36,7 +36,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v2
       env:
         #ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        PERSONAL_TOKEN: ${{ secrets.dbad306fada0c34562c0638947199d8bf6a92afb }}
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
