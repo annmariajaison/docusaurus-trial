@@ -31,7 +31,8 @@ jobs:
     - name: Build
       working-directory: website
       run: yarn build
-   
+    - name: GitHub Pages Deploy
+      uses: maxheld83/ghpages@v0.2.1
     - #name: Deploy 
     #uses: peaceiris/actions-gh-pages@v2
       env:
@@ -40,7 +41,6 @@ jobs:
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
-    - name: GitHub Pages Deploy
-      uses: maxheld83/ghpages@v0.2.1
+   
 
 
