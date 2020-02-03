@@ -39,4 +39,6 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: 'website/build/docusaurus-trial'    
+        PUBLISH_DIR: 'website/build/docusaurus-trial'
+    - name: Deploy Ghost Theme
+      uses: TryGhost/action-deploy-theme@v1.2.1  
