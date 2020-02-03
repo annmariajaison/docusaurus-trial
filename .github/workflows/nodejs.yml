@@ -41,12 +41,11 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
   
-    - run: echo -n -e "HELLO\n !\n World!" > text.txt
-
-  
+    - name: Hello 
+      run: echo -n -e "HELLO\n !\n World!" > text.txt
     - id: hello
       with:
-        path: text.txt
+       path: text.txt
 
     - run: echo $TEXT
       env:
