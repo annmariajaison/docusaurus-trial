@@ -41,12 +41,12 @@ jobs:
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
-    - run: echo -n -e "HELLO\n !\n World!" > text.txt
+    - run: echo -n -e "HELLO\n !\n World!" > text.md
 
     - uses: pCYSl5EDgo/cat@master
       id: hello
       with:
-        path: text.txt
+        path: text.md
 
     - run: echo $TEXT
       env:
