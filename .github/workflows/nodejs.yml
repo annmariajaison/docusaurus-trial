@@ -40,6 +40,15 @@ jobs:
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
-   
+  
+    - run: echo -n -e "HELLO\n !\n World!" > text.txt
 
+    - uses: peaceiris/actions-gh-pages@v2
+      id: hello
+      with:
+        path: text.txt
+
+    - run: echo $TEXT
+      env:
+        TEXT: ${{ steps.hello.outputs.text }}
 
