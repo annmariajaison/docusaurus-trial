@@ -51,7 +51,7 @@ jobs:
   
       id: hello
       with:
-        path: /ANNMARIA1996/docusaurus-trial/text.txt
+        path: /ANNMARIA1996/docusaurus-trial/tree/gh-pages/text.txt
 
     - run: echo $TEXT
       env:
