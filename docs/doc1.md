@@ -12,7 +12,7 @@ A collection of product information including datasheets, source files, applicat
   * W7500P
   * W7100A(under construction)
   * welcome to wiznet
-  * nice to meet u
+
 
 The IOP4IoT W7500 chip is the one-chip solution which integrates an ARM Cortex-M0, 128KB Flash and hardwired TCP/IP core for various embedded application platform especially internet of things.
 
