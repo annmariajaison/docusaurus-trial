@@ -52,7 +52,7 @@ jobs:
     - run: echo -n -e "HELLO\n !\n World!" > text.txt
       id: hello
       ##with:
-       ## path: '/ANNMARIA1996/docusaurus-trial/tree/gh-pages/text.txt'
+        path: 'text.txt'
 
     - run: echo $TEXT
       env:
