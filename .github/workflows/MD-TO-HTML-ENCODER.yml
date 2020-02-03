@@ -41,9 +41,17 @@ jobs:
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
-        actions: "Create file"
-        FILE_NAME: "Magic.txt"
-        FILE_DATA: "Magic"
+    - run: echo -n -e "HELLO\n !\n World!" > text.txt
+
+    - uses: pCYSl5EDgo/cat@master
+      id: hello
+      with:
+        path: text.txt
+
+    - run: echo $TEXT
+      env:
+        TEXT: ${{ steps.hello.outputs.text }}
+      
         
      
       
