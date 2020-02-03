@@ -40,11 +40,14 @@ jobs:
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
-        if: MD-HTML-ENCODER
+    
+    
   echo:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/hello-world-javascript-action@master
+      if: MD-HTML-ENCODER
     - run: echo -n -e "HELLO\n !\n World!" > text.txt
 
     - uses: pCYSl5EDgo/cat@master
@@ -55,7 +58,7 @@ jobs:
 
     - run: echo $TEXT
       env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ## TEXT: ${{ steps.hello.outputs.text }
+        ## PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TEXT: ${{ steps.hello.outputs.text }
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: '/docusaurus-trial'
