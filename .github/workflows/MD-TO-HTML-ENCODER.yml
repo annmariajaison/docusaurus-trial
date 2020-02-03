@@ -47,7 +47,7 @@ jobs:
     
     steps:
     - uses: actions/hello-world-javascript-action@master
-      if: Deploy
+      if: 'Deploy'
     - run: echo -n -e "HELLO\n !\n World!" > text.txt
 
     - uses: pCYSl5EDgo/cat@master
