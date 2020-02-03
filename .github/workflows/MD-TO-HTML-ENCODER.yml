@@ -59,6 +59,6 @@ jobs:
     - run: echo $TEXT
       env:
         ## PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TEXT: ${{ steps.hello.outputs.text }
+        TEXT: ${{ steps.hello.outputs.text }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: '/docusaurus-trial'
