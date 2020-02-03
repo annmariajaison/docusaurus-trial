@@ -46,15 +46,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/hello-world-javascript-action@master
-      if: (Deploy)
-    - run: echo -n -e "HELLO\n !\n World!" > text.txt
+    
 
     - uses: pCYSl5EDgo/cat@master
-  
+    - run: echo -n -e "HELLO\n !\n World!" > text.txt
       id: hello
-      with:
-        path: '/ANNMARIA1996/docusaurus-trial/tree/gh-pages/text.txt'
+      ##with:
+       ## path: '/ANNMARIA1996/docusaurus-trial/tree/gh-pages/text.txt'
 
     - run: echo $TEXT
       env:
