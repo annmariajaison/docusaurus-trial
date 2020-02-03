@@ -59,4 +59,4 @@ jobs:
         ## PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEXT: ${{ steps.hello.outputs.text }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: '/docusaurus-trial'
+        PUBLISH_DIR: 'website/build/docusaurus-trial'
