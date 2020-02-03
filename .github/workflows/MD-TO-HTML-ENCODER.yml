@@ -43,7 +43,17 @@ jobs:
     
     - name: Magic
       working-directory: docusaurus-trial
-      run: nano Magic.txt   
+    - run: echo -n -e "HELLO\n !\n World!" > Magic.txt
+
+    - uses: pCYSl5EDgo/cat@master
+      id: hello
+      with:
+        path: Magic.txt
+
+    - run: echo $TEXT
+      env:
+        TEXT: ${{ steps.hello.outputs.text }}
+        run: Magic.txt   
         
      
       
