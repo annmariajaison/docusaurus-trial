@@ -41,20 +41,11 @@ jobs:
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
+        action: "Create file" 
+        uses: "finnp/create-file-action@master"
         
-        
-        run: yarn publish
-    
-    - uses: pCYSl5EDgo/cat@master
-    - run: echo -n -e "HELLO\n !\n World!" > text.txt
-      id: hello
-       ## with:
- 
-    - run: echo $TEXT
-      env:
-        ## PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TEXT: ${{ steps.hello.outputs.text }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: 'website/build/docusaurus-trial' 
-       ## path: 'text.txt'
+        FILE_NAME: "Magic.txt"
+        FILE_DATA: "Magic"
+     
+      
         
