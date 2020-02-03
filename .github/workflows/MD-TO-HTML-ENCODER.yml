@@ -41,19 +41,10 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'    
     
-    - name: Magic
+    - name: Magic.txt
       working-directory: docusaurus-trial
-    - run: echo -n -e "HELLO\n !\n World!" > Magic.txt
+    
 
-    - uses: pCYSl5EDgo/cat@master
-      id: hello
-      with:
-        path: Magic.txt
-
-    - run: echo $TEXT
-      env:
-        TEXT: ${{ steps.hello.outputs.text }}
-        run: Magic.txt   
         
      
       
