@@ -42,13 +42,9 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial'
         
+        
+        run: yarn publish
     
-  echo:
-    runs-on: ubuntu-latest
-    
-    steps:
-    
-     
     - uses: pCYSl5EDgo/cat@master
     - run: echo -n -e "HELLO\n !\n World!" > text.txt
       id: hello
@@ -61,4 +57,4 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial' 
        ## path: 'text.txt'
-        run: yarn publish
+        
