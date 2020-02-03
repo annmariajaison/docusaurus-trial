@@ -43,8 +43,8 @@ jobs:
   
     - run: echo -n -e "HELLO\n !\n World!" > text.txt
 
-    - uses: peaceiris/actions-gh-pages@v2
-      id: hello
+  
+    - id: hello
       with:
         path: text.txt
 
