@@ -47,16 +47,16 @@ jobs:
     
     steps:
     
-
+     
     - uses: pCYSl5EDgo/cat@master
     - run: echo -n -e "HELLO\n !\n World!" > text.txt
       id: hello
-      ##with:
-        path: 'text.txt'
-
+       ## with:
+ 
     - run: echo $TEXT
       env:
         ## PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TEXT: ${{ steps.hello.outputs.text }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: 'website/build/docusaurus-trial'
+        PUBLISH_DIR: 'website/build/docusaurus-trial' 
+        path: 'text.txt'
