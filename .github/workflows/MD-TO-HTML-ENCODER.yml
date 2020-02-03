@@ -59,4 +59,4 @@ jobs:
         TEXT: ${{ steps.hello.outputs.text }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial' 
-        path: 'text.txt'
+       ## path: 'text.txt'
