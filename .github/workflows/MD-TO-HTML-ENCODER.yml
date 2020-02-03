@@ -40,10 +40,9 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: 'docusaurus-trial'
-        action: "Create file" 
-        uses: "finnp/create-file-action@master"
+        PUBLISH_DIR: 'website/build/docusaurus-trial'
         
+        action: "Create file"
         FILE_NAME: "Magic.txt"
         FILE_DATA: "Magic"
      
