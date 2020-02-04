@@ -30,11 +30,11 @@ jobs:
    
     - name: Build
       working-directory: website
-      run: yarn build:v1
+      run: yarn build
 
     - name: Deploy 
       #uses: peaceiris/actions-gh-pages@v2
-      run: yarn build:v2
+      run: yarn publish
       env:
         #ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         #PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
