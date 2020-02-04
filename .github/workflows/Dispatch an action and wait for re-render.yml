@@ -25,7 +25,8 @@ jobs:
 Build pkgdown site
 
 
-on push:
+on: 
+push:
     branches: master
 
 name: Pkgdown
