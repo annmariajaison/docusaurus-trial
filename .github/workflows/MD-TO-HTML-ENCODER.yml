@@ -34,7 +34,7 @@ jobs:
 
     - name: Deploy 
       #uses: peaceiris/actions-gh-pages@v2
-      run: yarn publish
+      run: npm run publish-gh-pages
       env:
         #ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         #PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
