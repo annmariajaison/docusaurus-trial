@@ -1,3 +1,3 @@
 #!/bin/sh
 
-git checkout master -- img
+git checkout gh-pages -- img
