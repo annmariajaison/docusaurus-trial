@@ -28,8 +28,8 @@ jobs:
       working-directory: website
       run: yarn
     ##################################################   
-    - name: Moving build to artifacts directory
-      working-directory: scripts
+    - name: Moving images to gh-pages directory
+      working-directory: ./scripts
       run: update-images.sh
    ################################################
    
