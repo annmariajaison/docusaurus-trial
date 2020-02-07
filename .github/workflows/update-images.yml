@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node_version: [8.x, 10.x]
+        node_version: [10.x]
 
     steps:
     - name: Checkout
@@ -25,4 +25,4 @@ jobs:
       run: npm run build:linux
 
     - name: Moving build to artifacts directory
-      run: /scripts/update-images.sh
+      run: ../scripts/update-images.sh
