@@ -29,8 +29,8 @@ jobs:
       run: yarn
     ##################################################   
     - name: Moving images to gh-pages directory
-      working-directory: ./scripts
-      run: update-images.sh
+      working-directory: master
+      run: ./scripts/update-images.sh
    ################################################
    
     - name: Build
