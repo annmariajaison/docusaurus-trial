@@ -27,6 +27,10 @@ jobs:
     - name: Installation
       working-directory: website
       run: yarn
+    ##################################################   
+    - name: Moving build to artifacts directory
+      run: ../scripts/update-images.sh
+   ################################################
    
     - name: Build
       working-directory: website
