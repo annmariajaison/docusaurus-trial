@@ -27,11 +27,7 @@ jobs:
     - name: Installation
       working-directory: website
       run: yarn
-    ##################################################   
-    - name: Moving images to gh-pages directory
-      working-directory: master
-      run: chmod +x scripts/update-images.sh
-   ################################################
+   
    
     - name: Build
       working-directory: website
@@ -45,3 +41,8 @@ jobs:
         #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: 'website/build/docusaurus-trial' 
+        ##################################################   
+    - name: Moving images to gh-pages directory
+     ## working-directory: master
+      run: chmod +x scripts/update-images.sh
+   ################################################
