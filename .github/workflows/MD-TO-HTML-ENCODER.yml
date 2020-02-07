@@ -29,6 +29,7 @@ jobs:
       run: yarn
     ##################################################   
     - name: Moving build to artifacts directory
+      working-directory: img
       run: /scripts/update-images.sh
    ################################################
    
