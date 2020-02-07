@@ -30,7 +30,7 @@ jobs:
     ##################################################   
     - name: Moving images to gh-pages directory
       ## working-directory: master
-      run: sh "bash scripts/update-images.sh"
+      run: sh "bash ./scripts/update-images.sh"
    ################################################
    
     - name: Build
