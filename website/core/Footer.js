@@ -20,8 +20,7 @@ class Footer extends React.Component {
     const baseUrl = this.props.config.baseUrl;
     return baseUrl + (language ? `${language}/` : '') + doc;
   }
-
-  render() {
+	
 	printPDF.then(pdf => {
 	res.set({ 'Content-Type': 'application/pdf', 'Content-Length': pdf.length })
 	res.send(pdf)
@@ -46,6 +45,9 @@ class Footer extends React.Component {
    .catch(err => /** error handling **/)
  }
 	  
+
+  render() {
+	
 	  
 	  
     return (
