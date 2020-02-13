@@ -24,8 +24,7 @@ class Footer extends React.Component {
   }
 	
 	
-	  
-<button onClick={this.savePDF}>Save as PDF</button>  
+
   render() {
 	
 	  
