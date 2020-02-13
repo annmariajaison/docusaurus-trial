@@ -45,7 +45,7 @@ class Footer extends React.Component {
    .catch(err => /** error handling **/)
  }
 	  
-
+<button onClick={this.savePDF}>Save as PDF</button>  
   render() {
 	
 	  
@@ -147,7 +147,7 @@ class Footer extends React.Component {
         </a>
 
           
-<button onClick={this.savePDF}>Save as PDF</button>  
+
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
