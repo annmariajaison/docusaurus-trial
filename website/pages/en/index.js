@@ -67,6 +67,8 @@ class HomeSplash extends React.Component {
             <Button href="#try">Products</Button>
             <Button href={docUrl('doc1.html')}>Open source</Button>
             <Button href={docUrl('doc2.html')}>Relative Links</Button>
+            
+            <Button onClick={this.savePDF}>Save as PDF</Button>  
           </PromoSection>
         </div>
       </SplashContainer>
@@ -78,7 +80,8 @@ class Index extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
-
+    
+    
     const Block = props => (
       <Container
         padding={['bottom', 'top']}
@@ -145,7 +148,7 @@ class Index extends React.Component {
         ]}
       </Block>
     );
-
+    
     const Features = () => (
       <Block layout="fourColumn">
         {[
