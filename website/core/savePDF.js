@@ -24,3 +24,5 @@ printPDF.then(pdf => {
  }
           
 <button onClick={this.savePDF}>Save as PDF</button>  
+
+module.exports = Index;
