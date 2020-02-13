@@ -42,7 +42,7 @@ const siteConfig = {
     {doc: 'doc4', label: 'Doc'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'contact'},
-    {page:'./website/core/savePDF.js', label: 'Save PDF'},
+    {nodejs:'./website/core/savePDF.js', label: 'Save PDF'},
     //   {href: 'https://v2.convertapi.com/convert/web/to/pdf?secret=&download=attachment&url=' + encodeURI(window.location), label: 'PDF'},
   ],
 
