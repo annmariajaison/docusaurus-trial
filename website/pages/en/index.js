@@ -13,6 +13,26 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+
+var markdownpdf = require("markdown-pdf")
+var options = {
+    remarkable: {
+        html: true,
+        breaks: true,
+        plugins: [ require('remarkable-classy') ],
+        syntax: [ 'footnote', 'sup', 'sub' ]
+    }
+}
+ 
+markdownpdf(options)
+  .from("/path/to/document.md")
+  .to("/path/to/document.pdf", function () { console.log("Done") })
+
+
+
+
+
+
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig, language = ''} = this.props;
@@ -213,18 +233,6 @@ class Index extends React.Component {
   }
 }
 
-var markdownpdf = require("markdown-pdf")
-var options = {
-    remarkable: {
-        html: true,
-        breaks: true,
-        plugins: [ require('remarkable-classy') ],
-        syntax: [ 'footnote', 'sup', 'sub' ]
-    }
-}
- 
-markdownpdf(options)
-  .from("/path/to/document.md")
-  .to("/path/to/document.pdf", function () { console.log("Done") })
+
   
 module.exports = Index;
