@@ -117,9 +117,9 @@ class Footer extends React.Component {
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
+          <node
+            src={`${this.props.config.baseUrl}websites/core/savePDF.js`}
+            alt="Save as PDF"
             width="170"
             height="45"
           />
