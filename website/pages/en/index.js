@@ -183,6 +183,12 @@ class Index extends React.Component {
 
       const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
 
+      
+      var loadingTask = pdfjsLib.getDocument(url);
+loadingTask.promise.then(function(pdf) {
+  console.log('PDF loaded');
+  
+  
       return (
         <div className="productShowcaseSection paddingBottom">
           <h2>Who is Using This?</h2>
