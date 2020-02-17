@@ -113,7 +113,7 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          baseUrl= websites/core/
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
