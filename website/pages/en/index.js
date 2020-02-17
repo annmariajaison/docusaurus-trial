@@ -6,6 +6,7 @@
  */
 
 const React = require('react');
+var markdownpdf = require("markdown-pdf")
 
 const CompLibrary = require('../../core/CompLibrary.js');
 
@@ -14,7 +15,7 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 
-var markdownpdf = require("markdown-pdf")
+
 var options = {
     remarkable: {
         html: true,
