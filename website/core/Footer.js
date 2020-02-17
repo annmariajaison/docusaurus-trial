@@ -113,15 +113,13 @@ class Footer extends React.Component {
         </section>
 
         <a
-          baseUrl= websites/core/
+          baseUrl= "websites/core/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <node
             src={`${this.props.config.baseUrl}websites/core/savePDF.js`}
             alt="Save as PDF"
-            width="170"
-            height="45"
           />
         </a>
 
