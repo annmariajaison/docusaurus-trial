@@ -218,9 +218,5 @@ loadingTask.promise.then(function(pdf) {
     );
   }
 }
- var loadingTask = pdfjsLib.getDocument(url);
-loadingTask.promise.then(function(pdf) {
-  console.log('PDF loaded');
-  
   
 module.exports = Index;
