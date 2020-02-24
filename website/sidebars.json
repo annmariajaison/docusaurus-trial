@@ -2,10 +2,15 @@
   "docs": {
     "PRODUCTS": [
       "doc1"
+      {
+       "type": "subcategory",
+       "label": "open source hardware",
+       "ids": ["doc2"]
+  },
      
      
     ],
-    "Open Source Hardware": ["doc2"],
+    
     "VAR Products": ["doc3"],
     "Application Reference":["doc10"]
   }
